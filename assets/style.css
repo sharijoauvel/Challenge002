@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box; /*Padding and border in the width and height*/
+    font-family: Arial, Helvetica, sans-serif; /*Chosen font family*/
+}
+
+
+label.logo{
+    color: white;
+    font-size: 40px;
+    line-height: 100px;
+    padding-left: 30px;
+  }
+/*Colour, font, size and location of logo*/
+
+
+
+nav {
+    height: 100px;
+    width: 100%;
+    overflow: auto; /*Browsers decide if scroll bar is needed*/
+    list-style-type: none;/* Remove bullet points from nav/list*/
+    background-color: #3299a8;
+  }
+ 
+
+  nav ul{
+    float: right; 
+    margin-right: 20px;
+  } /* Navigation on the right side, with a 20px margin*/
+
+  nav ul li{
+    display: inline-block;
+    margin: 5px;
+    padding: 20px;
+  }
+
+  nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none; 
+  }
+
+  a.active,a:hover{
+    color: #084f59;
+  }
+
+
+  /* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3299a8;
+  color: #ffffff;
+}
+
+
+  section{
+    padding: 20px;
+  }
+
+  h1{
+    font-size: 40px;
+    color: #3299a8;
+  }
+
+  h2{
+    font-size: 30px;
+    color: #3299a8;
+  }
+
+
+  h2{
+    font-size: 20px;
+    color: white;
+  }
+
+  p{
+    font-size: 20px;
+  }
+  
+  .wrapper{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-row-gap: 1em;
+    grid-column-gap:1em;
+    grid-auto-rows: 300px;
+     /*grid-auto-rows: minmax(400px auto);*/
+     grid-template-areas:
+    "websites graphicDesign digitalMarketing";
+  }
+
+
+  .wrapper div{
+    padding: 1em;
+    border: #084f59 solid 1px;
+    background-color: #ffffff;
+  }
+
+
+    .gridname{
+      font-size: 40px;
+      background-color: #3299a8;
+      color: #ffffff;
+      position: absolute;
+      bottom: -400px;
+      left: 60px;
+      padding: 30px;
+    }
+
+
+  .box1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-image: url(../assets/images/website_mock.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; /* Do not repeat the image in the space */
+    background-position: center; /* Center the image */
+    
+  }
+
+
+  .box2{
+    background-image: url(../assets/images/CCHTA4ad.png); 
+    background-size: contain;
+    background-repeat: no-repeat; /* Do not repeat the image in the space */
+    background-position: center; /* Center the image */
+  }
+
+  .box3{
+    background-image: url(../assets/images/Marketing.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; /* Do not repeat the image in the space */
+    background-position: center; /* Center the image */
+  }
